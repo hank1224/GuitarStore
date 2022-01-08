@@ -1,0 +1,39 @@
+#adwrapper{
+	width:900px;
+	padding:0 50px;
+	margin:0 auto;
+}
+
+#adcontainer{
+	background:#FFF;
+	padding:0;
+	position:relative;
+}
+
+#adnav{
+	position:absolute;
+	top:200px;
+	left: 50px;
+}
+
+adtext{
+	display:block;
+	background:#635F5F;
+	padding:20px;
+	width: 50px;
+	color:#FFF;
+	font-size: 30px;
+	text-align: center;
+	border-bottom:1px solid #777;
+	-webkit-writing-mode: vertical-lr;
+	writing-mode: vertical-lr;
+}
+
+.ad{
+	margin: auto;
+}
+
+#adnavR{
+	position: absolute;
+	top:200px;
+}
