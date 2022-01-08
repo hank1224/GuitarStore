@@ -1,0 +1,127 @@
+body{
+    font-family: 微軟正黑體;
+}
+.Header {
+    
+     width: 1920px;
+     max-width: 100%;
+     min-height: 80px;
+     margin: 0px;
+     padding: 0px ;
+     border: 0px;
+     position: relative;
+     background-color: aquamarine;
+     text-align: center;
+ }
+ .head{
+     text-align: center;
+     padding-top: 10px;
+     padding-bottom: 10px;
+ }
+ 
+ .menu{
+    overflow: hidden;
+    border: 1px solid #ddb0ab;
+    background-color: #dcb1ab;
+    width: 1650;
+    height: auto; 
+    align-content: center;
+ }
+ .menu button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+  }
+ .menu button:hover {
+    background-color: #c88179;
+  }
+  .menu button.active {
+    background-color: #d29992;
+  }
+  .menucontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+  }
+
+  /*會員資料*/
+ td{
+    padding: 10px;
+    text-align: center;
+    background-color: #be695e;
+    color: white;
+  }
+  
+  .textbox {
+    background-color: #e9ab9e;
+  }
+  .textbox input{
+    float: left;
+  }
+  .left{
+    float: left;
+  }
+  .right{
+    float:right;
+  }
+  .button {
+    font-size: 16px;
+    align-self: center;
+    background-color: #ccc;
+    font-weight: bold;
+    padding: 10px 10px 10px 10px;
+    color: black;
+  }
+  .table{
+    border:3px #e9ab9e solid;
+    padding: 10px;
+    border:1;
+    width: 1000px;
+    height: 600px;
+  }
+  /*會員資料結束*/
+
+  /*消費紀錄*/
+  .buyrecord{
+    border:2px #e9ab9e solid;
+    height: auto;
+      
+  }
+  .brh2{
+      align-content: center;
+      font-weight: bold;
+      
+  }
+
+
+  /*評分與評論*/
+  .Footer {
+    width: 1900px;
+    height: 80px;
+    text-align: center;
+    line-height: 80px;
+    font-size: 15px;
+    color: #fffaf3;
+    font-weight: bold;
+    background-color: #f9c81e;
+}
+h4{
+  font-size: 16px;
+  
+}
+.loginout{
+  height: 90px;
+  position: relative;
+  top: 20px;
+}
+.loginout1{
+  background-color: #e88a8c;
+  height: 50px;
+  width: 70px;
+  
+}

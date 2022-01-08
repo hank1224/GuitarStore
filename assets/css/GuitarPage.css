@@ -1,0 +1,298 @@
+.body {
+    margin: 0%;
+}
+
+#sitebody {
+    width: auto;
+    margin: 0%;
+}
+
+#header {
+    background-color: white;
+    height: 80px;
+    line-height: 80px;
+    width: 100%;
+    margin-top: 25px;
+    font-family: Comic Sans MS;
+}
+
+b1 {
+    font-size: 40px;
+    font-family: 'cwTeXFangSong';
+}
+
+a.b1 {
+    text-decoration: none;
+    color: inherit;
+}
+
+b2 {
+    font-size: 15px;
+    font-family: 'cwTeXFangSong';
+}
+
+.icons {
+    float: right;
+    margin-right: 50px;
+
+}
+
+.icons>a {
+    padding: 10px;
+}
+
+.navbar {
+    margin: auto;
+}
+
+nav>ul {
+    background-color: white;
+    list-style: none;
+    
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    color: inherit;
+    display: block;
+    font-size: 1.2rem;
+    padding: 10px;
+    text-decoration: none;
+}
+
+nav li:hover {
+    background-color: lightsalmon;
+    color: white;
+}
+
+.flex-nav {
+    display: flex;
+    justify-content: center;
+}
+
+.mainshopping {
+    margin: 40px 20% 0% 20%;
+}
+
+.smallview {
+    width: 100px;
+    margin: 10px;
+}
+
+.view {
+    position: relative;
+
+}
+
+.Product-title {
+    font-weight: bold;
+    font-size: 35px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.Product-info {
+    font-weight: 100;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.Product-price {
+    font-weight: bold;
+    font-size: 25px;
+    color: red;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+.addtocart {
+    width: 50%;
+    background-color: darksalmon;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+footer {
+    margin: 0%;
+    padding: 1%;
+    width: 100%;
+    background-color: darksalmon;
+    font-size: 16px;
+    font-weight: 100;
+    font-family: 標楷體;
+    color: white;
+    text-align: center;
+    line-height: 20px;
+}
+
+
+
+
+.box {
+    width: 400px;
+    height: 400px;
+    margin: 0px;
+    border: 1px solid #ccc;
+    position: relative;
+
+}
+
+.big {
+    width: 600px;
+    height: 600px;
+    position: absolute;
+    top: 0;
+    left: 360px;
+    border: 1px solid #ccc;
+    overflow: hidden;
+    display: none;
+}
+
+.mask {
+    width: 200px;
+    height: 200px;
+    background: rgba(255, 255, 0, 0.4);
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: move;
+    display: none;
+}
+
+.small {
+    position: relative;
+}
+
+#productview {
+    vertical-align: top;
+    width: 400px;
+}
+
+/*星等*/
+.my-rating-6 {         
+    display: flex;
+    justify-content: space-between;
+  }
+
+.cls {
+    clear: both;
+}
+
+.container1 {
+    float: left;
+}
+
+.container2 {
+    width: 780px;
+    min-height: 10px;
+    margin: 50px auto;
+    float: right;
+    /* border: 1px solid #dfdfdf; */
+}
+
+.comment {
+    min-height: 60px;
+    /* border: 1px solid red; */
+}
+
+.comment-avatar img {
+    margin: 20px 0 0 20px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+
+.comment-content {
+    float: right;
+    width: 685px;
+    padding-top: 15px;
+    border-top: 1px solid #dfdfdf;
+}
+
+.comment-bottom>.comment-content {
+    border-bottom: 1px solid #dfdfdf;
+}
+
+.comment-content-name {
+    color: #6d757a;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.comment-content-article {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.comment-content-footer {
+    color: #6d757a;
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+
+.comment-content-footer span {
+    margin-right: 10px;
+}
+
+
+.comment-send {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.comment-send-input {
+    outline: none;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    transition: all 0.3s;
+    position: absolute;
+    top: 15px;
+    left: 95px;
+    resize: none;
+    width: 605px;
+    height: 65px;
+    padding: 10px;
+    border-radius: 4px;
+    background: #f4f5f7;
+    border: 1px solid #e5e9ef;
+}
+
+.comment-send-input:hover,
+.comment-send-input:active {
+    background: #fff;
+    color: #555;
+}
+
+.comment-send-button {
+    border: none;
+    cursor: pointer;
+    user-select: none;
+    -moz-user-select: none;
+    transition: all 0.3s;
+    position: absolute;
+    top: 15px;
+    right: 0px;
+    width: 65px;
+    height: 65px;
+    border-radius: 4px;
+    background: #c00303;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+}
+
+.comment-send-button:hover {
+    background: darksalmon;
+}
+
+.list1 {
+    list-style: none;
+}
+
+.list1 li {
+    float: left;
+    cursor: pointer;
+}

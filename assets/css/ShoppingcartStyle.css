@@ -1,0 +1,201 @@
+
+/*商品購物車*/
+.Sidebar {
+    width: 850px;
+    float: left;
+    height: 500px;
+    text-align: center;
+    line-height: 280px;
+    font-size: 15px;
+    color: black;
+    font-weight: bold;
+    background-color: white;
+    padding-left: 20px;
+}
+th:first-child, td:first-child {
+    padding-left: 0;
+}
+th {
+    display: table-cell;
+    vertical-align: inherit;
+    font-weight: bold;
+    text-align: -internal-center;
+}
+.product-subtotal, .product-price, .product-qt
+{
+    text-align: right;
+}
+/*商品購物車結束*/
+
+/*金額計算*/
+.content {
+    width: 850px;
+    height: 500px;
+    line-height: 280px;
+    font-size: 15px;
+    color: black;
+    font-weight: bold;
+    background-color:white;
+    float: right;
+    border-left: 1px solid black;
+    padding: 20px;
+}
+th:last-child, td:last-child {
+    padding-right: 0;
+}
+th:first-child, td:first-child {
+    padding-left: 0;
+}
+.uppercase, h6, th, span.widget-title {
+    letter-spacing: .05em;
+    text-transform: uppercase;
+}
+th, td {
+    padding: 0.5em;
+    text-align: left;
+    border-bottom: 1px solid #ececec;
+    line-height: 1.3;
+    font-size: 15px;
+}
+th {
+    display: table-cell;
+    vertical-align: inherit;
+    font-weight: bold;
+    text-align: -internal-center;
+}
+table {
+    width: 100%;
+    margin-bottom: 1em;
+    border-color: #ececec;
+    border-spacing: 0;
+}
+.button{
+    border-color: #C05054;
+    background-color: #C05054;
+    color: #fff;
+    width: 20%;
+    height: 40px;
+}
+.button2{
+    height: 54px;
+    line-height: 52px;
+    padding: 0 px;
+    font-size: 18px;
+    font-family: "Arial Black","Arial","Helvetica",sans-serif;
+    text-align: center;
+}
+div{
+    margin: 0;
+    padding: 0;
+}
+
+/*金額計算結束*/
+
+.Footer {
+    width: 1900px;
+    height: 80px;
+    text-align: center;
+    line-height: 80px;
+    font-size: 15px;
+    color: #fffaf3;
+    font-weight: bold;
+    background-color: #f9c81e;
+}
+ /*下面是購買流程*/
+ .checkout-nav .step:first-child .badge::before {
+    width: 50%;
+    left: 50%;
+}
+.checkout-nav .step .badge::before {
+    content: " ";
+    background-color:#F0C4BB;
+    height: 2px;
+    width: 100%;
+    position:absolute;
+    left: -110px;
+    top: 50%;
+    margin-top: -1px;
+    z-index: 0;
+}
+
+.checkout-nav .step .badge::after {
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    border-radius: 15px;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    content: " ";
+    background-color: #F0C4BB;
+    height: 30px;
+    width: 30px;
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    z-index: 0;
+}
+
+*:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing:border-box;
+}
+.checkout-nav {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+* {
+    font-family: andy-money, Noto Sans, Mitr, Athiti, Noto Sans TC, Noto Sans SC, system-ui, -apple-system, Segoe UI, sans-serif;
+}
+.checkout-nav .step {
+    display: inline-block;
+    vertical-align:top;
+    width: 240px;
+    max-width: 40%;
+    margin-left: -2px;
+    margin-right: -2px;
+    color: black;
+}
+.checkout-nav .step .badge {
+    position:relative;
+    background-color:transparent;
+    height: 50px;
+    line-height:50px;
+    padding: 0px;
+}
+.checkout-nav .step span {
+    display:block;
+    padding: 10 5px;
+}
+.badge {
+    display: inline-block;
+    min-width: 10px;
+    padding: 3px 7px;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 1;
+    color: black;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    background-color: #777777;
+    border-radius: 10px;
+}
+.checkout-nav .step .badge .text {
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+}
+.clearfix:before, .clearfix:after, .dl-horizontal dd:before, .dl-horizontal dd:after, .container:before, .container:after, .container-fluid:before, .container-fluid:after, .row:before, .row:after, .form-horizontal .form-group:before, .form-horizontal .form-group:after, .btn-toolbar:before, .btn-toolbar:after, .btn-group-vertical>.btn-group:before, .btn-group-vertical>.btn-group:after, .nav:before, .nav:after, .navbar:before, .navbar:after, .navbar-header:before, .navbar-header:after, .navbar-collapse:before, .navbar-collapse:after, .pager:before, .pager:after, .panel-body:before, .panel-body:after, .modal-header:before, .modal-header:after, .modal-footer:before, .modal-footer:after {
+    display: table;
+    content: " ";
+}
+
+.checkout-nav .step.visited .badge::after, .checkout-nav .step.active .badge::after {
+    background-color: #EE968F;
+}
+
+/* 購買流程結束 */
+

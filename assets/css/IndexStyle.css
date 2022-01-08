@@ -1,0 +1,148 @@
+.body {
+    margin: 0;
+}
+
+#sitebody {
+    width: auto;
+    margin: 0;
+}
+
+#header {
+    background-color: white;
+    height: 80px;
+    line-height: 80px;
+    width: 100%;
+    margin-top: 25px;
+    font-family: Comic Sans MS;
+}
+
+b1 {
+    font-size: 40px;
+    font-family: 'cwTeXFangSong';
+}
+
+a.b1 {
+    text-decoration: none;
+    color: inherit;
+}
+
+b2 {
+    font-size: 15px;
+    font-family: 'cwTeXFangSong';
+}
+
+.icons {
+    float: right;
+    margin-right: 50px;
+
+}
+
+.icons>a {
+    padding: 10px;
+}
+
+.navbar {
+    margin: auto;
+}
+
+nav>ul {
+    background-color: white;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    color: inherit;
+    display: block;
+    font-size: 1.2rem;
+    padding: 10px;
+    text-decoration: none;
+    
+}
+
+nav li:hover {
+    background-color: lightsalmon;
+    color: white;
+}
+
+.flex-nav {
+    display: flex;
+    justify-content: center;
+}
+
+#sidebar_left {
+    float: left;
+    width: 150px;
+    background: #000;
+}
+
+#sidebar_right {
+    background-color: #FFECC9;
+    width: 150px;
+    float: right;
+}
+
+#content {
+    margin-top: 40px;
+    background-color:white;
+    /*background-color: #F2FFF2;*/
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.Products{
+    display: grid;
+    grid-template-columns: [line1] 0.5fr [line2] 0.5fr;
+    grid-row: [row1] 350px [row2] 50px [row3] 350px [row4] 50px [row5] 350px [row6] 50px [row7] 350px [row8] 50px;
+    justify-items: center;
+    
+}
+
+.products1{
+    margin: auto;
+}
+
+.box{
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+.shopimg{
+    width: 350px;
+}
+
+.ProductText{
+    text-align: center
+}
+
+c1{
+    font-size: 13px;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+c2{
+    font-size: 25px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #000000;
+}
+
+c3{
+    font-size: 18px;
+    font-weight: bold;
+    color: red;
+    white-space: nowrap;
+}
+
+footer {
+    margin: 0%;
+    padding: 1%;
+    width: 98%;
+    background-color: darksalmon;
+    font-size: 16px;
+    font-weight: 100;
+    font-family: 標楷體;
+    color: white;
+    text-align: center;
+    line-height: 20px;
+}
