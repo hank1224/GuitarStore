@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="assets/css/personal information.css" rel="stylesheet">
+    <link href="assets/css/IndexStyle.css" rel="stylesheet">
+    <script src="assets/js/personal information.js"></script>
+    <script src="assets/js/IndexJavaScript.js"></script>
+</head>
+<body class="body">
+    <div class="wrapper">
+        <div id="sitebody">
+            <div id="header">
+                <img src="assets/image/guitar-playing.png" width="70px"
+                    style="float: left; margin-left: 50px; margin-right: 20px;">
+                <b1> <a href=index.html class="b1">二手吉他</a></b1>
+                <b2>尋找屬於你的下一個他</b2>
+                <div class="icons">
+                    <a href="mailto:cycu@edu.tw?subject=意見回饋"><img src="assets/image/email.png" width="30px"></a>
+                <a href="personal information.html"><img src="assets/image/profile.png" width="30px"></a>
+                <a href="shoppingcart.html"><img src="assets/image/shopping-cart.png" width="30px"></a>
+                </div>
+            </div><br>
+            <div class="navbar">
+                <nav>
+                    <ul class="flex-nav">
+                    <li><a href="index.html">電吉他</a></li>
+                    <li><a href="AcousticGuitar.html">民謠吉他</a></li>
+                    <li><a href="Hot.html">熱門商品</a></li>
+                    <li><a href="Class.html">專業吉他課程</a></li>
+                    <li><a href="AboutUs.html">關於我們</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <hr size="1.5px" align="center" width="60%" color="lightsalmon">
+
+    <div class="head">
+        <img src="assets\image\排少.jpg" alt="head" width="250px"><br>
+    </div>
+    <div class="menu">
+        <button class="menulinks" onclick="buy(event,'buy')"><h4>個人基本資料</h4></button>
+        <button class="menulinks" onclick="buy(event,'buy2')"><h4>消費紀錄</h4></button>
+        <button class="menulinks" onclick="buy(event,'buy3')"><h4>評分與評論紀錄</h4></button>
+        <form class="loginout">
+            <input type="submit" class="loginout1" name="登出" value="登出">
+      </form>
+    </div>
+    
+    <div id="buy" class="menucontent">
+        <form>
+            <table class="table">
+                
+                <tr>
+                    <td>姓名</td>
+                    <td  class="textbox"><input type="text" name="name"></td>
+                    <td>性別</td>
+                    <td style="background-color: #e9ab9e;color: black;">
+                        <input type="radio" name="gender" value="male" >男
+                        <input type="radio" name="gender" value="female" >女
+                    </td>
+                </tr>
+                <tr>
+                    <td>生日</td>
+                    <td colspan="3" class="textbox"><input type="date" name="birthday"></td>
+                </tr>
+    
+                <tr>
+                    <td>手機(10碼)</td>
+                    <td colspan="3" class="textbox"><input type="text" name="cellphone" maxlength="10"></td>
+                </tr>
+                <tr>
+                    <td> email</td>
+                    <td colspan="3" class="textbox"> <input type="email" size="50" name="email"></td>
+                </tr>
+                <tr>
+                    <td> 地址</td>
+                    <td colspan="3" class="textbox">
+                        <select name="CountyName" class="left">
+                            <option value="宜蘭縣">宜蘭縣</option>
+                            <option value="桃園縣">桃園縣</option>
+                            <option value="新竹縣">新竹縣</option>
+                            <option value="苗栗縣">苗栗縣</option>
+                            <option value="臺中縣">臺中縣</option>
+                            <option value="彰化縣">彰化縣</option>
+                            <option value="南投縣">南投縣</option>
+                            <option value="雲林縣">雲林縣</option>
+                            <option value="嘉義縣">嘉義縣</option>
+                            <option value="臺南縣">臺南縣</option>
+                            <option value="高雄縣">高雄縣</option>
+                            <option value="屏東縣">屏東縣</option>
+                            <option value="臺東縣">臺東縣</option>
+                            <option value="花蓮縣">花蓮縣</option>
+                            <option value="澎湖縣">澎湖縣</option>
+                            <option value="基隆市">基隆市</option>
+                            <option value="新竹市">新竹市</option>
+                            <option value="臺中市">臺中市</option>
+                            <option value="嘉義市">嘉義市</option>
+                            <option value="臺南市">臺南市</option>
+                            <option value="臺北市" selected="">臺北市</option>
+                            <option value="高雄市">高雄市</option>
+                            <option value="新北市">新北市</option>
+                            <option value="金門縣">金門縣</option>
+                            <option value="連江縣">連江縣</option>
+                        </select>
+    
+                        <input type="text" size="50" name="address">
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="mid">備註</td>
+                    <td colspan="3" class="textbox">
+                        <textarea class="left" rows="4" cols="50" name="note"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4">
+                        <input type="submit" value="儲存"  padding-top:="" 10px="" class="button"> &nbsp; &nbsp;
+                        <input type="reset" value="重設" class="button">
+                    </td>
+                </tr>
+            </tbody></table>
+        </form>
+    </div>
+      
+    <div id="buy2" class="menucontent">
+        <div class="buyrecord"><p class="brh2">消費紀錄</p></div>
+    </div>
+      
+    <div id="buy3" class="menucontent">
+        <div class="buyrecord"><p class="brh2">評分</p></div>
+    </div>
+    <footer>
+        <p>2021中原資管二甲-第14組期末專案</p>
+        <p>All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

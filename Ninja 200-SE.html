@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ninja 200-SE</title>
+    <link href="assets/css/GuitarPage.css" rel="stylesheet">
+    <script src="assets/js/GuitarPage.js"></script>
+    <script src="assets/js/jquery-2.1.4.min.js"></script>
+    <script src="assets/js/IndexJavaScript.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    <script src="assets/js/jquery.star-rating-svg.js"></script>
+    <script src="assets/js/jquery.star-rating-svg.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <style>
+        @font-face {
+            font-family: 'cwTeXFangSong';
+            font-style: normal;
+            font-weight: 500;
+            src: url(//fonts.gstatic.com/ea/cwtexfangsong/v3/cwTeXFangSong-zhonly.eot);
+            src: url(//fonts.gstatic.com/ea/cwtexfangsong/v3/cwTeXFangSong-zhonly.eot?#iefix) format('embedded-opentype'),
+                url(//fonts.gstatic.com/ea/cwtexfangsong/v3/cwTeXFangSong-zhonly.woff2) format('woff2'),
+                url(//fonts.gstatic.com/ea/cwtexfangsong/v3/cwTeXFangSong-zhonly.woff) format('woff'),
+                url(//fonts.gstatic.com/ea/cwtexfangsong/v3/cwTeXFangSong-zhonly.ttf) format('truetype');
+        }
+    </style>
+    <script>
+        window.onload = function () {
+            var box = document.getElementsByClassName("box")[0];
+            var small = box.firstElementChild || box.firstChild;
+            var big = box.children[1];
+            var mask = small.children[1];
+            var bigImg = big.children[0];
+
+            small.onmouseenter = function () {
+                show(mask);
+                show(big);
+            }
+            small.onmouseleave = function () {
+                hide(mask);
+                hide(big);
+            }
+
+
+            small.onmousemove = function (event) {
+
+                event = event || window.event;
+
+                var pagex = event.pageX || scroll().left + event.clientX;
+                var pagey = event.pageY || scroll().top + event.clientY;
+                var x = pagex - box.offsetLeft - mask.offsetWidth / 2;
+                var y = pagey - box.offsetTop - mask.offsetHeight / 2;
+
+                if (x < 0) {
+                    x = 0;
+                }
+                if (x > small.offsetWidth - mask.offsetWidth) {
+                    x = small.offsetWidth - mask.offsetWidth;
+                }
+
+                if (y < 0) {
+                    y = 0;
+                }
+                if (y > small.offsetHeight - mask.offsetHeight) {
+                    y = small.offsetHeight - mask.offsetHeight;
+                }
+
+
+                console.log(small.offsetHeight);
+                mask.style.left = x + "px";
+                mask.style.top = y + "px";
+
+                var bili = bigImg.offsetWidth / small.offsetWidth;
+
+                var xx = bili * x;
+                var yy = bili * y;
+
+                bigImg.style.marginTop = -yy + "px";
+                bigImg.style.marginLeft = -xx + "px";
+            }
+        }
+    </script>
+</head>
+
+<body class="body">
+
+    <div id="sitebody">
+        <div id="header">
+            <img src="assets/image/guitar-playing.png" width="70px"
+                style="float: left; margin-left: 50px; margin-right: 20px;">
+            <b1> <a href=index.html class="b1">二手吉他</a></b1>
+            <b2>尋找屬於你的下一個他</b2>
+            <div class="icons">
+                <a href="mailto:cycu@edu.tw?subject=意見回饋"><img src="assets/image/email.png" width="30px"></a>
+                <a href="personal information.html"><img src="assets/image/profile.png" width="30px"></a>
+                <a href="shoppingcart.html"><img src="assets/image/shopping-cart.png" width="30px"></a>
+            </div>
+        </div><br>
+        <div class="navbar">
+            <nav>
+                <ul class="flex-nav">
+                    <li><a href="index.html">電吉他</a></li>
+                    <li><a href="AcousticGuitar.html">民謠吉他</a></li>
+                    <li><a href="Hot.html">熱門商品</a></li>
+                    <li><a href="Class.html">專業吉他課程</a></li>
+                    <li><a href="AboutUs.html">關於我們</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <hr size="1.5px" align="center" width="60%" color="lightsalmon">
+
+        <div class="mainshopping">
+
+            <div style="float: left; width: 50%;height: 600px;">
+
+                <div class="box">
+                    <div class="small">
+                        <img id="productview"
+                            src="assets/image/guitars/Legator/Legator_N7-200.jpg"
+                            alt="" />
+                        <div class="mask"></div>
+                    </div>
+                    <div class="big">
+                        <img src="assets/image/guitars/Legator/Legator_N7-200.jpg"
+                            alt="" />
+                    </div>
+                </div>
+
+                <div class="view">
+                    <img src="assets/image/guitars/Legator/44c4c623ad7837515bb1e0e823c24536-1200-80.jpg"
+                        class="smallview">
+                    <img src="assets/image/guitars/Legator/Legator_N7-200.jpg"
+                        class="smallview">
+                    <img src="assets/image/guitars/Legator/e48565250007510d9rs.jpg"
+                        class="smallview">
+                </div>
+
+            </div>
+            <div style="height: 600px;">
+                <div class="Product-title">
+                    <p>Ninja 200-SE</p>
+                </div>
+                <div class="Product-info">
+                    <p>他的上個主人說:</p>
+                    <p>&nbsp&nbsp FB社團來的</p>
+                </div>
+                <div class="Product-price">
+                    <p>NT$:9,000</p>
+                </div>
+                <button class="addtocart">加入購物車</button>
+            </div>
+
+            <div>
+
+                <div class="container1">
+                    <script>
+                        $(function () {
+                            var aLi = $('.list1 li');
+                            var leng = aLi.length;
+                            var arr = ['很差', '較差', '一般', '較好', '很好'];
+                            var arr2 = ['assets/image/black-star-icon.jpg', 'assets/image/black-star-icon.jpg',
+                                'assets/image/black-star-icon.jpg',
+                                'assets/image/black-star-icon.jpg', 'assets/image/black-star-icon.jpg'
+                            ];
+                            var s1 = '';
+
+                            aLi.click(function () {
+                                for (var j = 0; j < leng; j++) {
+                                    aLi.eq(j).find('img').attr('src',
+                                        'assets/image/black-star-icon.jpg');
+                                };
+                                var index = $(this).index();
+                                if (index < 2) {
+                                    for (var j = 0; j <= index; j++) {
+                                        aLi.eq(j).find('img').attr('src', 'assets/image/star-icon.png');
+                                        s1 = arr[index];
+                                        arr2[j] = aLi.eq(j).find('img').attr('src');
+                                    }
+                                } else {
+                                    for (var j = 0; j <= index; j++) {
+                                        aLi.eq(j).find('img').attr('src', 'assets/image/star-icon.png');
+                                        s1 = arr[index];
+                                        arr2[j] = aLi.eq(j).find('img').attr('src');
+                                    }
+                                };
+
+                                for (var k = index + 1; k < leng; k++) {
+                                    arr2[k] = 'assets/image/black-star-icon.jpg';
+                                };
+                                $('.s1').text(s1);
+                            });
+
+                            aLi.hover(function () {
+                                for (var j = 0; j < leng; j++) {
+                                    aLi.eq(j).find('img').attr('src',
+                                        'assets/image/black-star-icon.jpg');
+                                };
+                                var index = $(this).index();
+                                if (index < 2) {
+                                    for (var j = 0; j <= index; j++) {
+                                        aLi.eq(j).find('img').attr('src', 'assets/image/star-icon.png');
+                                        $('.s1').text(arr[index]);
+                                    }
+                                } else {
+                                    for (var j = 0; j <= index; j++) {
+                                        aLi.eq(j).find('img').attr('src', 'assets/image/star-icon.png');
+                                        $('.s1').text(arr[index]);
+                                    }
+                                }
+                            }, function () {
+                                for (var index = 0; index < leng; index++) {
+                                    aLi.eq(index).find('img').attr('src', arr2[index]);
+                                }
+                                $('.s1').text(s1);
+                            });
+                        })
+                    </script>
+                    </head>
+
+                    <body>
+                        商品評價：
+                        <ul class="list1">
+                            <li><img src="assets/image/black-star-icon.jpg" style="width: 50px;"></li>
+                            <li><img src="assets/image/black-star-icon.jpg" style="width: 50px;"></li>
+                            <li><img src="assets/image/black-star-icon.jpg" style="width: 50px;"></li>
+                            <li><img src="assets/image/black-star-icon.jpg" style="width: 50px;"></li>
+                            <li><img src="assets/image/black-star-icon.jpg" style="width: 50px;"></li>
+                        </ul>
+                        <span class="s1"></span>
+                </div>
+
+                <div class="container2">
+                    <div class="comment-send">
+                        <form id="commentForm" method="GET" action="http://127.0.0.1:8888/comment">
+                            <span class="comment-avatar">
+                                <img src="assets/image/head.png" alt="avatar">
+                            </span>
+                            <textarea class="comment-send-input" name="comment" form="commentForm" cols="80" rows="5"
+                                placeholder="留下您寶貴的購買體驗吧!"></textarea>
+                            <input class="comment-send-button" type="submit" value="發表">
+                        </form>
+                    </div>
+                    <div class="comment-list" id="commentList">
+                        <div class="comment">
+                            <span class="comment-avatar">
+                                <img src="assets/image/ElectricGuiter.png" alt="avatar">
+                            </span>
+                            <div class="comment-content">
+                                <p class="comment-content-name">王之軍</p>
+                                <p class="comment-content-article">SDD</p>
+                                <p class="comment-content-footer">
+                                    <span class="comment-content-footer-id">#2</span>
+                                    <span class="comment-content-footer-timestamp">2021-12-20 14:05</span>
+                                </p>
+                            </div>
+                            <div class="cls"></div>
+                        </div>
+                        <div class="comment comment-bottom">
+                            <span class="comment-avatar">
+                                <img src="assets/image/AcousticGuitar.png" alt="avatar">
+                            </span>
+                            <div class="comment-content">
+                                <p class="comment-content-name">陳澔恩</p>
+                                <p class="comment-content-article">CP值超高的啦!</p>
+                                <p class="comment-content-footer">
+                                    <span class="comment-content-footer-id">#1</span>
+                                    <span class="comment-content-footer-timestamp">2021-12-20 13:10</span>
+                                </p>
+                            </div>
+                            <div class="cls"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
